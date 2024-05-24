@@ -1,0 +1,558 @@
+@font-face {
+	font-family: "Silkscreen";
+	src: url(/Fonts/Silkscreen/Silkscreen-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Honk";
+	src: url(/Fonts/Honk/Honk-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Jacquarda";
+	src: url(/Fonts/Jaquarda/Jacquarda-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Protest";
+	src: url(/Fonts/Protest_Revolution/ProtestRevolution-Regular.ttf);
+}
+
+@import "compass/css3";
+
+
+body {
+	background-image: url('/Img/webfondo3.jpg');
+	backdrop-filter: brightness(15%);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed fixed;
+	color: azure;
+	margin: 0px;
+	
+}
+
+.head-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-right: 4rem;
+	margin-bottom: 32vh;
+}
+
+.head-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+
+	margin: 1rem 2rem;
+}
+
+.anchor-head {
+	color: #fff;
+	text-decoration: none;
+	font-family: "Protest";
+	font-size: 2rem;
+	display: inline-block;
+	justify-content: left;
+	padding: 5px 25px;
+	transition: 0.5s;
+	border-radius: 10px;
+
+}
+
+.anchor-head:hover {
+	background-color: rgba(32, 182, 87, 0.2);
+	text-decoration: underline overline;
+	text-decoration-color: rgb(38, 201, 87);
+	text-shadow: rgb(255, 0, 8) 1px 0 10px;
+
+}
+
+.flick {
+	display: flex;
+	justify-content: center;
+	margin: 30vh;
+	margin-bottom: 10vh;
+
+}
+hr{
+	width: 80%;
+	height: 10px;
+	border: 0;
+	border-radius: 5px;
+	box-shadow: 0 10px 10px -10px #9a9898 inset;
+}
+
+.aboutMe-style {
+	display: flex;
+	flex-direction: row;	
+	top: 50%;
+	left: 50%;
+	margin-top: 15vh;
+	color: rgb(38, 201, 187);
+
+}
+
+.btn {
+	display: flex;
+	justify-content:left;
+	font-family: 'Protest';
+	position: relative;
+	text-align: center;
+	padding: 50px 10px;
+	color: white;
+	text-shadow: 5px 5px 10px rgb(70, 211, 178);
+	margin: 10vh 10vh 10vh 10vh;
+	transition: 0.7;
+}
+
+.picture-AI{
+	display: flex;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-left: 5rem;
+	height: 200px;
+	width: 200px;
+	background-image: url(/Img/sketchAI.jpg);
+	border-radius:50%;
+}
+
+
+/* Box effect on greeting */
+#btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 40%;
+	height: 40%;
+	cursor: pointer;	
+	padding: 10px 20px;
+	background: rgba(0, 0, 0, 0.1);
+	font-size: 4rem;
+	transition: all 1s;
+	border-radius: 20%;
+
+
+	&:hover {
+
+		background: rgba(0, 0, 0, 5);
+		background-image: url(/Img/codeBackground.webp);
+		background-repeat: no-repeat;
+		background-size: stretch;
+		background-position: center;
+		text-shadow: rgb(43, 36, 115) 4px 4px;
+		color: white;
+
+	}
+}
+
+.postick {
+	display: flex;
+	justify-content:center;
+	overflow: hidden;
+	font-family: 'Silkscreen';
+	font-size: 20px;
+	color: #ffffff;
+	height: 400px;
+	width: 45%;
+	margin: 10vh 10vh 10vh 5vh;
+
+
+}
+
+.skill-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-self: center;
+	color: rgb(242, 248, 255);
+	flex-wrap: wrap;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+
+
+
+	
+}
+
+.typer {
+	display: block;
+	font-family: 'Protest';
+	font-size: 2rem;
+	white-space: nowrap;
+	border-right: 4px solid;
+	width: 17rem;
+	animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+	overflow: hidden;
+}
+
+
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
+}
+
+.skill-icons{
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	justify-content:space-evenly;
+	gap: 50px;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 5rem 0px 20rem 0rem;
+	
+	
+}
+.icon-github{
+	background-color: #ffffff;
+	border-radius: 20%;
+}
+
+
+.li-sec1 {
+	font-size: 20px;
+	list-style: none;
+}
+
+
+
+#footer-style {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	justify-self: center;
+	background-image: url(/Img/footer.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	height: 10rem;
+	text-decoration: none;
+
+}
+.anchor-info{
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+
+}
+.fa-whatsapp{
+	color: rgb(46, 218, 46);
+	font-size: 50px;
+	cursor: pointer;
+}
+.fa-linkedin{
+	color: rgb(31, 90, 240);
+	font-size: 50px;
+	cursor: pointer;
+	
+}
+.fa-envelope{
+	color: #fff;
+	font-size: 50px;
+	cursor: pointer;
+}
+
+
+
+.flick>span {
+	opacity: 0.15;
+	font-size: 7rem;
+}
+
+#I {
+	opacity: 1;
+	animation: flickerI 3.5s linear reverse infinite;
+}
+
+#I::after {
+	content: '';
+	width: 150%;
+	-webkit-box-shadow: -35px 0px 60px 8px rgba(255, 255, 255, 1);
+	-moz-box-shadow: -35px 0px 60px 8px rgba(255, 255, 255, 1);
+	box-shadow: -35px 0px 60px 8px rgba(255, 255, 255, 1);
+}
+
+#L,
+#G {
+	animation: flickerLG 2.5s linear reverse infinite;
+	position: relative;
+}
+
+#L::after,
+#L::before {
+	content: ' ';
+	width: 100px;
+	height: 100px;
+	background: var(--white);
+	position: absolute;
+	top: -50%;
+	left: 100%;
+	border-radius: 100%;
+	opacity: 0.05;
+	filter: blur(10px);
+}
+
+#L::after {
+	width: 200px;
+	height: 200px;
+	top: -150%;
+	left: -5%;
+	opacity: 0.1;
+	filter: blur(10px);
+}
+
+#H {
+	animation: flickerH 2s linear reverse infinite
+}
+
+#T {
+	animation: flickerH 2s linear reverse infinite
+}
+
+@keyframes flickerI {
+	0% {
+		opacity: 0.4;
+	}
+
+	5% {
+		opacity: 0.5;
+	}
+
+	10% {
+		opacity: 0.6;
+	}
+
+	15% {
+		opacity: 0.85;
+	}
+
+	25% {
+		opacity: 0.5;
+	}
+
+	30% {
+		opacity: 1;
+	}
+
+	35% {
+		opacity: 0.1;
+	}
+
+	40% {
+		opacity: 0.25;
+	}
+
+	45% {
+		opacity: 0.5;
+	}
+
+	60% {
+		opacity: 1;
+	}
+
+	70% {
+		opacity: 0.85;
+	}
+
+	80% {
+		opacity: 0.4;
+	}
+
+	90% {
+		opacity: 0.5;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes flickerLG {
+	0% {
+		opacity: 0.19;
+	}
+
+	5% {
+		opacity: 0.2;
+	}
+
+	10% {
+		opacity: 0.25;
+	}
+
+	15% {
+		opacity: 0.35;
+	}
+
+	25% {
+		opacity: 0.2;
+	}
+
+	30% {
+		opacity: 0.4;
+	}
+
+	35% {
+		opacity: 0.1;
+	}
+
+	40% {
+		opacity: 0.25;
+	}
+
+	45% {
+		opacity: 0.2;
+	}
+
+	60% {
+		opacity: 0.4;
+	}
+
+	70% {
+		opacity: 0.35;
+	}
+
+	80% {
+		opacity: 0.4;
+	}
+
+	90% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 0.4;
+	}
+}
+
+@keyframes flickerH {
+	0% {
+		opacity: 0.15;
+	}
+
+	5% {
+		opacity: 0.2;
+	}
+
+	10% {
+		opacity: 0.12;
+	}
+
+	15% {
+		opacity: 0.2;
+	}
+
+	25% {
+		opacity: 0.15;
+	}
+
+	30% {
+		opacity: 0.4;
+	}
+
+	35% {
+		opacity: 0.05;
+	}
+
+	40% {
+		opacity: 0.12;
+	}
+
+	45% {
+		opacity: 0.15;
+	}
+
+	60% {
+		opacity: 0.3;
+	}
+
+	70% {
+		opacity: 0.2;
+	}
+
+	80% {
+		opacity: 0.3;
+	}
+
+	90% {
+		opacity: 0.18;
+	}
+
+	100% {
+		opacity: 0.3;
+	}
+}
+
+@keyframes flickerT {
+	0% {
+		opacity: 0.01;
+	}
+
+	5% {
+		opacity: 0.05;
+	}
+
+	10% {
+		opacity: 0.03;
+	}
+
+	15% {
+		opacity: 0.1;
+	}
+
+	25% {
+		opacity: 0.07;
+	}
+
+	30% {
+		opacity: 0.1;
+	}
+
+	35% {
+		opacity: 0.05;
+	}
+
+	40% {
+		opacity: 0.06;
+	}
+
+	45% {
+		opacity: 0.1;
+	}
+
+	60% {
+		opacity: 0.;
+	}
+
+	70% {
+		opacity: 0.1;
+	}
+
+	80% {
+		opacity: 0.;
+	}
+
+	90% {
+		opacity: 0.0;
+	}
+
+	100% {
+		opacity: 0.1;
+	}
+}
+
+@media (768px) {
+	
+}
