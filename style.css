@@ -1,28 +1,28 @@
 @font-face {
 	font-family: "Silkscreen";
-	src: url(/Fonts/Silkscreen/Silkscreen-Regular.ttf);
+	src: url(Fonts/Silkscreen/Silkscreen-Regular.ttf);
 }
 
 @font-face {
 	font-family: "Honk";
-	src: url(/Fonts/Honk/Honk-Regular.ttf);
+	src: url(Fonts/Honk/Honk-Regular.ttf);
 }
 
 @font-face {
 	font-family: "Jacquarda";
-	src: url(/Fonts/Jaquarda/Jacquarda-Regular.ttf);
+	src: url(Fonts/Jaquarda/Jacquarda-Regular.ttf);
 }
 
 @font-face {
 	font-family: "Protest";
-	src: url(/Fonts/Protest_Revolution/ProtestRevolution-Regular.ttf);
+	src: url(Fonts/Protest_Revolution/ProtestRevolution-Regular.ttf);
 }
 
 @import "compass/css3";
 
 
 body {
-	background-image: url('/Img/webfondo3.jpg');
+	background-image: url('Img/webfondo3.jpg');
 	backdrop-filter: brightness(15%);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -115,7 +115,7 @@ hr{
 	margin-left: 5rem;
 	height: 200px;
 	width: 200px;
-	background-image: url(/Img/sketchAI.jpg);
+	background-image: url(Img/sketchAI.jpg);
 	border-radius:50%;
 }
 
@@ -139,7 +139,7 @@ hr{
 	&:hover {
 
 		background: rgba(0, 0, 0, 5);
-		background-image: url(/Img/codeBackground.webp);
+		background-image: url(Img/codeBackground.webp);
 		background-repeat: no-repeat;
 		background-size: stretch;
 		background-position: center;
@@ -234,7 +234,7 @@ hr{
 	justify-content: space-around;
 	align-items: center;
 	justify-self: center;
-	background-image: url(/Img/footer.png);
+	background-image: url(Img/footer.png);
 	background-repeat: no-repeat;
 	background-size:cover;
 	height: 10rem;
