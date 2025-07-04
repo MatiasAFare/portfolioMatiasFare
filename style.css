@@ -18,34 +18,67 @@
 	src: url(Fonts/Protest_Revolution/ProtestRevolution-Regular.ttf);
 }
 
-@import "compass/css3";
+/* Remove invalid import */
 
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
 
 body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	position: relative;
 	background-image: url('./Img/webfondo3.jpg');
-	backdrop-filter: brightness(15%);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-attachment: fixed fixed;
+	background-attachment: fixed;
 	color: azure;
-	margin: 0px;
-	
 }
+
+/* Overlay with blur effect */
+body::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
+	pointer-events: none;
+	z-index: 1;
+}
+
+/* Ensure all content is above the overlay */
+.head-main,
+.welcome,
+.about,
+.skill-section,
+#footer-style,
+hr {
+	position: relative;
+	z-index: 2;
+}
+
 
 .head-main {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-right: 4rem;
-	margin-bottom: 32vh;
+	margin-right: 2rem;
+	margin-bottom: 5vh;
 }
 
 .head-menu {
 	display: flex;
 	flex-direction: row;
 	justify-content: right;
-
 	margin: 1rem 2rem;
 }
 
@@ -63,104 +96,139 @@ body {
 }
 
 .anchor-head:hover {
-	background-color: rgba(32, 182, 87, 0.2);
+	background-color: rgba(224, 224, 224, 0.539);
 	text-decoration: underline overline;
-	text-decoration-color: rgb(38, 201, 87);
-	text-shadow: rgb(255, 0, 8) 1px 0 10px;
+	text-decoration-color: rgb(227, 225, 255);
+	text-shadow: rgb(9, 30, 86) 1px 0 10px;
 
 }
 
 .flick {
 	display: flex;
 	justify-content: center;
-	margin: 30vh;
-	margin-bottom: 10vh;
-
+	align-items: center;
+	margin: 0;
+	padding: 2rem;
+	text-align: center;
 }
-hr{
+
+hr {
 	width: 80%;
 	height: 10px;
 	border: 0;
 	border-radius: 5px;
 	box-shadow: 0 10px 10px -10px #9a9898 inset;
+	margin-top: 20vh;
+	margin-bottom: 20vh;
 }
 
-.aboutMe-style {
-	display: flex;
-	flex-direction: row;	
-	top: 50%;
-	left: 50%;
-	margin-top: 15vh;
-	color: rgb(38, 201, 187);
+#hr_two {
+	width: 80%;
+	height: 10px;
+	border: 0;
+	border-radius: 5px;
+	box-shadow: 0 10px 10px -10px #9a9898 inset;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
 
+.welcome {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 60vh;
+	margin-bottom: 10vh;
+	position: relative;
+}
+
+.about {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	min-height: 80vh;
+	color: rgb(38, 201, 187);
+	background-color: rgba(0, 0, 0, 0.3);
+	padding: 2rem;
+	margin: 3rem auto;
+	max-width: 90%;
+	border-radius: 30px;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	gap: 2rem;
 }
 
 .btn {
 	display: flex;
-	justify-content:left;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	font-family: 'Protest';
 	position: relative;
 	text-align: center;
-	padding: 50px 10px;
+	padding: 20px;
 	color: white;
 	text-shadow: 5px 5px 10px rgb(70, 211, 178);
-	margin: 10vh 10vh 10vh 10vh;
-	transition: 0.7;
+	transition: 0.7s;
 }
 
-.picture-AI{
+.picture-AI {
 	display: flex;
-	background-size: 100% 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
-	margin-left: 5rem;
+	background-position: center;
+	margin: 1rem auto;
 	height: 200px;
 	width: 200px;
 	background-image: url(./Img/sketchAI.jpg);
-	border-radius:50%;
+	border-radius: 50%;
+	border: 3px solid rgba(255, 255, 255, 0.3);
+	transition: transform 0.3s ease;
 }
 
 
-/* Box effect on greeting */
 #btn {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	position: relative;
-	width: 40%;
-	height: 40%;
-	cursor: pointer;	
-	padding: 10px 20px;
+	flex: 1;
+	min-height: 300px;
+	cursor: pointer;
+	padding: 20px;
 	background: rgba(0, 0, 0, 0.1);
-	font-size: 4rem;
+	font-size: 3rem;
 	transition: all 1s;
-	border-radius: 20%;
-
+	border-radius: 20px;
+	text-align: center;
 
 	&:hover {
-
-		background: rgba(0, 0, 0, 5);
+		background: rgba(0, 0, 0, 0.8);
 		background-image: url(./Img/codeBackground.webp);
 		background-repeat: no-repeat;
-		background-size: stretch;
+		background-size: cover;
 		background-position: center;
-		text-shadow: rgb(43, 36, 115) 4px 4px;
+		backdrop-filter: blur(5px);
+		text-shadow: rgb(43, 36, 115) 4px 4px 8px;
 		color: white;
-
+		transform: scale(1.05);
 	}
 }
 
 .postick {
 	display: flex;
-	justify-content:center;
-	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
 	font-family: 'Silkscreen';
-	font-size: 20px;
+	font-size: 18px;
 	color: #ffffff;
-	height: 400px;
-	width: 45%;
-	margin: 10vh 10vh 10vh 5vh;
-
-
+	padding: 2rem;
+	text-align: center;
+	line-height: 1.6;
 }
 
 .skill-section {
@@ -173,20 +241,16 @@ hr{
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-
-
-
-	
 }
 
 .typer {
 	display: block;
 	font-family: 'Protest';
-	font-size: 2rem;
+	font-size: 4rem;
 	white-space: nowrap;
 	border-right: 4px solid;
-	width: 17rem;
-	animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+	width: 35rem;
+	animation: typing 2s steps(12, end), blink .5s infinite step-end alternate;
 	overflow: hidden;
 }
 
@@ -204,19 +268,42 @@ hr{
 	}
 }
 
-.skill-icons{
+.skill-icons {
 	display: flex;
 	flex-direction: row;
 	justify-items: center;
-	justify-content:space-evenly;
+	justify-content: space-evenly;
 	gap: 50px;
 	flex-wrap: wrap;
 	width: 100%;
 	margin: 5rem 0px 20rem 0rem;
-	
-	
 }
-.icon-github{
+
+.skill-icons img {
+	width: 64px;
+	height: 64px;
+	transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.skill-icons span {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	border-radius: 15px;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	transition: all 0.3s ease;
+}
+
+.skill-icons span:hover {
+	background: rgba(255, 255, 255, 0.2);
+	transform: translateY(-10px);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.icon-github {
 	background-color: #ffffff;
 	border-radius: 20%;
 }
@@ -233,32 +320,57 @@ hr{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	justify-self: center;
-	background-image: url(./Img/footer.png);
-	background-repeat: no-repeat;
-	background-size:cover;
-	height: 10rem;
+	margin-top: auto;
+	margin-bottom: 0;
+	width: 100%;
 	text-decoration: none;
-
+	padding: 8rem 0 5rem 0;
+	position: relative;
+	background: linear-gradient(to bottom,
+			transparent 0%,
+			rgba(0, 0, 0, 0.3) 30%,
+			rgba(0, 0, 0, 0.6) 60%,
+			rgba(0, 0, 0, 0.8) 80%,
+			rgba(0, 0, 0, 0.95) 100%);
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
 }
-.anchor-info{
+
+/* Footer gradient transition */
+#footer-style::before {
+	content: "";
+	position: absolute;
+	top: -50px;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background: linear-gradient(to bottom,
+			transparent 0%,
+			rgba(0, 0, 0, 0.1) 100%);
+	pointer-events: none;
+}
+
+.anchor-info {
 	display: flex;
 	justify-content: center;
 	text-decoration: none;
 
 }
-.fa-whatsapp{
+
+.fa-whatsapp {
 	color: rgb(46, 218, 46);
 	font-size: 50px;
 	cursor: pointer;
 }
-.fa-linkedin{
+
+.fa-linkedin {
 	color: rgb(31, 90, 240);
 	font-size: 50px;
 	cursor: pointer;
-	
+
 }
-.fa-envelope{
+
+.fa-envelope {
 	color: #fff;
 	font-size: 50px;
 	cursor: pointer;
@@ -269,6 +381,9 @@ hr{
 .flick>span {
 	opacity: 0.15;
 	font-size: 7rem;
+	font-family: 'Protest', sans-serif;
+	color: #ffffff;
+	text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
 
 #I {
@@ -533,7 +648,7 @@ hr{
 	}
 
 	60% {
-		opacity: 0.;
+		opacity: 0.4;
 	}
 
 	70% {
@@ -541,11 +656,11 @@ hr{
 	}
 
 	80% {
-		opacity: 0.;
+		opacity: 0.05;
 	}
 
 	90% {
-		opacity: 0.0;
+		opacity: 0.02;
 	}
 
 	100% {
@@ -553,3 +668,595 @@ hr{
 	}
 }
 
+.skill-icons span {
+	position: relative;
+}
+
+.skill-icons span::after {
+	content: '✨';
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	font-size: 2rem;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+
+.skill-icons span:hover::after {
+	opacity: 1;
+	animation: sparkle 0.6s ease;
+}
+
+@keyframes sparkle {
+	0% {
+		transform: scale(0.8) rotate(0deg);
+		opacity: 0;
+	}
+
+	50% {
+		transform: scale(1.2) rotate(180deg);
+		opacity: 1;
+	}
+
+	100% {
+		transform: scale(1) rotate(360deg);
+		opacity: 1;
+	}
+}
+
+/* Loading Animation */
+.loading-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+	opacity: 1;
+	transition: opacity 0.5s ease;
+}
+
+.loading-overlay.hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.loader {
+	width: 50px;
+	height: 50px;
+	border: 3px solid rgba(255, 255, 255, 0.3);
+	border-top: 3px solid #fff;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Improved animations */
+.fade-in {
+	opacity: 0;
+	transform: translateY(20px);
+	animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Smooth transitions */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Performance optimizations */
+.skill-icons img,
+.picture-AI,
+.floating-shape {
+	will-change: transform;
+}
+
+/* Improved hover effects */
+.anchor-head,
+.btn,
+.skill-icons span {
+	will-change: transform, background-color;
+}
+
+/* Responsive Design */
+
+/* Large Tablets and Small Desktops (769px - 1024px) */
+@media (max-width: 1024px) {
+	.head-menu {
+		margin: 1rem 2rem;
+	}
+
+	.anchor-head {
+		font-size: 1.8rem;
+		padding: 8px 20px;
+	}
+
+	.about {
+		margin: 2rem;
+		padding: 1.5rem;
+		max-width: 95%;
+	}
+
+	.btn {
+		font-size: 2.5rem;
+	}
+
+	.flick>span {
+		font-size: 5rem;
+	}
+
+	.typer {
+		font-size: 3rem;
+		width: 90%;
+	}
+}
+
+/* Tablets (481px - 768px) */
+@media (max-width: 768px) {
+
+	/* Show hamburger menu */
+	.hamburger-menu {
+		display: flex !important;
+		position: fixed !important;
+		top: 1.5rem !important;
+		right: 2rem !important;
+		z-index: 10001 !important;
+	}
+
+	/* Hide regular menu by default */
+	.head-menu:not(.active) {
+		display: none !important;
+	}
+
+	/* Show menu when active */
+	.head-menu.active {
+		display: flex !important;
+		position: fixed !important;
+		top: 0 !important;
+		left: 0 !important;
+		width: 100% !important;
+		height: 100vh !important;
+		background: rgba(0, 0, 0, 0.95) !important;
+		backdrop-filter: blur(10px) !important;
+		flex-direction: column !important;
+		justify-content: center !important;
+		align-items: center !important;
+		gap: 3rem !important;
+		z-index: 10000 !important;
+		opacity: 1 !important;
+		visibility: visible !important;
+	}
+
+	.head-main {
+		margin-right: 0;
+		margin-bottom: 2vh;
+	}
+
+	.welcome {
+		min-height: 50vh;
+		margin-bottom: 5vh;
+	}
+
+	.flick>span {
+		font-size: 4rem;
+	}
+
+	.about {
+		flex-direction: column;
+		margin: 1rem auto;
+		padding: 1.5rem;
+		min-height: auto;
+		max-width: 95%;
+		gap: 1.5rem;
+	}
+
+	.btn {
+		font-size: 2rem;
+		min-height: 250px;
+		padding: 1.5rem;
+	}
+
+	.picture-AI {
+		height: 150px;
+		width: 150px;
+		margin: 1rem auto 0;
+	}
+
+	.postick {
+		font-size: 16px;
+		padding: 1rem;
+		text-align: center;
+	}
+
+	.postick p {
+		margin: 0;
+		line-height: 1.5;
+	}
+
+	.typer {
+		font-size: 2.5rem;
+		width: 100%;
+		text-align: center;
+	}
+
+	.skill-icons {
+		gap: 20px;
+		margin: 3rem 0 8rem 0;
+		justify-content: center;
+	}
+
+	.skill-icons img {
+		width: 50px;
+		height: 50px;
+	}
+
+	.skill-icons span {
+		padding: 0.8rem;
+	}
+
+	hr {
+		width: 90%;
+		margin-top: 15vh;
+		margin-bottom: 15vh;
+	}
+
+	#hr_two {
+		width: 90%;
+		margin-top: 8vh;
+		margin-bottom: 8vh;
+	}
+
+	#footer-style {
+		padding: 6rem 0 3rem 0;
+		margin-bottom: 0;
+	}
+}
+
+/* Mobile Phones (320px - 480px) */
+@media (max-width: 480px) {
+
+	/* Hamburger menu already visible from 768px breakpoint, just adjust size */
+	.hamburger-menu {
+		top: 1rem;
+		right: 1rem;
+		width: 25px;
+		height: 20px;
+	}
+
+	.hamburger-line {
+		height: 2px;
+	}
+
+	.welcome {
+		min-height: 40vh;
+		padding: 1rem;
+	}
+
+	.flick {
+		padding: 1rem;
+	}
+
+	.flick>span {
+		font-size: 2.5rem;
+	}
+
+	.about {
+		margin: 0.5rem auto;
+		padding: 1rem;
+		gap: 1rem;
+	}
+
+	.btn {
+		font-size: 1.5rem;
+		min-height: 200px;
+		padding: 1rem;
+	}
+
+	.picture-AI {
+		height: 120px;
+		width: 120px;
+	}
+
+	.postick {
+		font-size: 14px;
+		padding: 0.8rem;
+	}
+
+	.typer {
+		font-size: 1.8rem;
+		width: 100%;
+	}
+
+	.skill-section {
+		width: 95%;
+	}
+
+	.skill-icons {
+		gap: 15px;
+		margin: 2rem 0 6rem 0;
+	}
+
+	.skill-icons img {
+		width: 40px;
+		height: 40px;
+	}
+
+	.skill-icons span {
+		padding: 0.6rem;
+	}
+
+	hr {
+		width: 85%;
+		height: 8px;
+		margin-top: 10vh;
+		margin-bottom: 10vh;
+	}
+
+	#hr_two {
+		width: 85%;
+		height: 8px;
+		margin-top: 6vh;
+		margin-bottom: 6vh;
+	}
+
+	.fa-whatsapp,
+	.fa-linkedin,
+	.fa-envelope {
+		font-size: 40px;
+	}
+
+	#footer-style {
+		padding: 4rem 0 2rem 0;
+		gap: 2rem;
+	}
+
+	/* Mobile menu adjustments */
+	.head-menu.mobile-menu-open .anchor-head {
+		font-size: 2rem;
+		padding: 0.8rem 1.5rem;
+	}
+}
+
+/* Very Small Mobile Phones (max 360px) */
+@media (max-width: 360px) {
+	.flick>span {
+		font-size: 2rem;
+	}
+
+	.btn {
+		font-size: 1.3rem;
+		min-height: 180px;
+	}
+
+	.picture-AI {
+		height: 100px;
+		width: 100px;
+	}
+
+	.postick {
+		font-size: 12px;
+	}
+
+	.typer {
+		font-size: 1.5rem;
+	}
+
+	.skill-icons img {
+		width: 35px;
+		height: 35px;
+	}
+
+	.skill-icons span {
+		padding: 0.5rem;
+	}
+
+	.fa-whatsapp,
+	.fa-linkedin,
+	.fa-envelope {
+		font-size: 35px;
+	}
+
+	/* Very small mobile menu adjustments */
+	.head-menu.mobile-menu-open .anchor-head {
+		font-size: 1.8rem;
+		padding: 0.7rem 1.2rem;
+	}
+}
+
+/* Additional responsive improvements */
+.postick p {
+	margin: 0;
+	padding: 0;
+}
+
+/* Ensure proper line height for readability */
+@media (max-width: 768px) {
+	.postick p {
+		line-height: 1.4;
+	}
+}
+
+@media (max-width: 480px) {
+	.postick p {
+		line-height: 1.3;
+	}
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+	display: none;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 30px;
+	height: 25px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	position: fixed;
+	top: 1.5rem;
+	right: 2rem;
+	z-index: 10001;
+	transition: all 0.3s ease;
+}
+
+.hamburger-line {
+	width: 100%;
+	height: 3px;
+	background-color: #ffffff;
+	border-radius: 2px;
+	transition: all 0.3s ease;
+	transform-origin: center;
+	box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(1) {
+	transform: rotate(45deg) translateY(8px);
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(2) {
+	opacity: 0;
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(3) {
+	transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Hide hamburger menu on desktop */
+@media (min-width: 769px) {
+	.hamburger-menu {
+		display: none !important;
+	}
+
+	.head-menu {
+		display: flex !important;
+	}
+}
+
+/* Mobile Menu Overlay */
+.head-menu.mobile-menu-open {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.95);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	z-index: 999;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease;
+}
+
+.head-menu.mobile-menu-open.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.head-menu.mobile-menu-open .anchor-head {
+	font-size: 2.5rem;
+	padding: 1rem 2rem;
+	color: #fff;
+	text-decoration: none;
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	border-radius: 15px;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	transition: all 0.3s ease;
+	transform: translateY(30px);
+	opacity: 0;
+	animation: slideInUp 0.5s ease forwards;
+}
+
+.head-menu.mobile-menu-open .anchor-head:nth-child(1) {
+	animation-delay: 0.1s;
+}
+
+.head-menu.mobile-menu-open .anchor-head:nth-child(2) {
+	animation-delay: 0.2s;
+}
+
+.head-menu.mobile-menu-open .anchor-head:nth-child(3) {
+	animation-delay: 0.3s;
+}
+
+.head-menu.mobile-menu-open .anchor-head:hover {
+	background: rgba(255, 255, 255, 0.2);
+	border-color: rgba(255, 255, 255, 0.5);
+	transform: translateY(0) scale(1.05);
+}
+
+@keyframes slideInUp {
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+/* Active state for mobile menu */
+.head-menu.active {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.95);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	z-index: 10000;
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s ease;
+}
+
+.head-menu.active .anchor-head {
+	font-size: 2.5rem !important;
+	padding: 1rem 2rem !important;
+	color: #fff !important;
+	text-decoration: none !important;
+	border: 2px solid rgba(255, 255, 255, 0.2) !important;
+	border-radius: 15px !important;
+	background: rgba(255, 255, 255, 0.1) !important;
+	backdrop-filter: blur(10px) !important;
+	transition: all 0.3s ease !important;
+	transform: translateY(0) !important;
+	opacity: 1 !important;
+	animation: slideInUp 0.5s ease forwards !important;
+}
+
+.head-menu.active .anchor-head:hover {
+	background: rgba(255, 255, 255, 0.2) !important;
+	border-color: rgba(255, 255, 255, 0.5) !important;
+	transform: translateY(0) scale(1.05) !important;
+}

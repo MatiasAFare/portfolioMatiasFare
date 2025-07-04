@@ -1,0 +1,393 @@
+@font-face {
+    font-family: "Protest";
+    src: url(Fonts/Protest_Revolution/ProtestRevolution-Regular.ttf);
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    background-image: url('./Img/contactbackground.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: transparent;
+    font-family: "Protest";
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    background: transparent;
+}
+
+/* Ensure no default backgrounds */
+body,
+html,
+section,
+div,
+form {
+    background-color: transparent !important;
+}
+
+/* Override any potential default styles */
+.contact-form-section,
+.contact-socials,
+.contact-item {
+    background-color: transparent !important;
+}
+
+/* Make sure the form section is the only one with background */
+.contact-form-section {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.return-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 2rem 0;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #a44bc29d;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: "Protest";
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.back-button:hover {
+    background-color: #128C7E;
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.contact-form-section {
+    max-width: 500px;
+    margin: 5vh auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    opacity: 0.95;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-form-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+    padding: 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-form-section input:focus,
+.contact-form-section textarea:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-form-section input::placeholder,
+.contact-form-section textarea::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-form-section button {
+    padding: 0.8rem 2rem;
+    background-color: #25D366;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: "Protest";
+    margin-top: 1rem;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form-section button:hover {
+    background-color: #128C7E;
+    transform: translateY(-2px);
+}
+
+.contact-form-section label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    display: block;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.contact-socials {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background: transparent;
+    padding: 2rem 0;
+}
+
+.contact-socials h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+.contact-socials a {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+    /* Transición suave para el efecto */
+}
+
+.contact-socials a:hover {
+    transform: scale(1.2);
+    /* Escala el ícono al pasar el mouse */
+}
+
+.contact-socials a {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 2s ease, opacity 2s ease;
+}
+
+#message {
+    resize: vertical;
+    height: 150px;
+    max-height: 300px;
+    min-height: 100px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-item span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #e0dddd;
+    text-align: center;
+}
+
+
+.fa-whatsapp {
+    color: rgb(46, 218, 46);
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.fa-linkedin {
+    color: rgb(31, 90, 240);
+    font-size: 50px;
+    cursor: pointer;
+
+}
+
+.fa-envelope {
+    color: #000000;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.floating-shape {
+    position: fixed;
+    bottom: 50%;
+    right: 20vw;
+    width: 100px;
+    height: 100px;
+    background-image: url('./Img/seriouscat.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    animation: floating 3s ease-in-out infinite;
+    cursor: pointer;
+    z-index: 9999;
+    transition: transform 1s ease;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-70px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Loading Animation */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.loading-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-top: 4px solid #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Smooth transitions */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Performance optimizations */
+.floating-shape,
+.contact-socials a,
+.back-button {
+    will-change: transform;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form-section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .contact-form-section h2 {
+        font-size: 2rem;
+    }
+
+    .contact-form-section button {
+        font-size: 1.5rem;
+    }
+
+    .contact-socials {
+        flex-direction: row;
+        gap: 15px;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .floating-shape {
+        width: 80px;
+        height: 80px;
+        right: 5vw;
+        bottom: 10vh;
+    }
+
+    .return-button-container {
+        margin: 2rem 0 1.5rem 0;
+    }
+
+    .back-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .return-button-container {
+        margin: 1.5rem 0 1rem 0;
+    }
+
+    .back-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .floating-shape {
+        width: 60px;
+        height: 60px;
+        right: 2vw;
+        bottom: 5vh;
+    }
+}

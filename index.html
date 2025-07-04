@@ -18,16 +18,27 @@
 </head>
 
 <body>
-
-
+    <!-- Loading Overlay -->
+    <div class="loading-overlay">
+        <div class="loader"></div>
+    </div>
 
     <header class="head-main">
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger-menu" aria-label="Toggle menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+
         <nav class="head-menu">
-            <a class="anchor-head" href="#aboutMe-style">About me</a>
+            <a class="anchor-head" href="#about">About me</a>
             <a class="anchor-head" href="#skill-section">Skills</a>
-            <a class="anchor-head" href="#footer-style">Contact</a>
+            <a class="anchor-head" href="contact.html">Contact</a>
         </nav>
-        
+    </header>
+
+    <section class="welcome">
         <div class="flick">
             <span id="L">W</span>
             <span id="I">E</span>
@@ -37,22 +48,28 @@
             <span id="I">M</span>
             <span id="T">E</span>
         </div>
-    </header>
+    </section>
+
     <hr>
 
 
-    <section class="aboutMe-style" id="aboutMe-style">
-        <div class="btn" id="btn">I'm Matias Faré<div class="picture-AI"></div></div>
-        
-        <div class="postick"><p>"I am passionate about the IT sector, currently studying a Bachelor's Degree in Information Technology to improve and offer the best of myself. I am a full stack developer / software developer with great creativity and imagination who seeks to expand my horizons."</p></div>
+    <section class="about" id="about">
+        <div class="btn" id="btn">I'm Matias Faré<div class="picture-AI"></div>
+        </div>
+
+        <div class="postick">
+            <p>"I'm passionate about the IT sector and I am currently pursuing a Bachelor's degree in Information
+                Technology to improve
+                and offer my best. I'm a full-stack/software developer with great creativity and imagination, looking to
+                expand my horizons."</p>
+        </div>
 
     </section>
-    
+
     <hr>
 
     <section class="skill-section" id="skill-section">
         <p class="typer">These are my Skills</p>
-        <!-- Icon section-I'll add effects in the future -->
         <div class="skill-icons">
             <span class="icon-html"><img src="./Img/Html-icons8.png" alt="HTML icono de Icons8"></span>
             <span class="icon-css"><img src="./Img/CSS-icons8.png" alt="CSS icono de Icons8"></span>
@@ -68,16 +85,20 @@
             <span class="icon-data"><img src="./Img/data-analyst-icons8.png" alt="icono de icons8"></span>
         </div>
     </section>
-    <hr>
+    <hr id="hr_two">
 
     <footer id="footer-style">
-        <a class="anchor-info" href="https://wa.me/5491159389175?text=Hello%20I%27m%20interested%20in%20contacting%20you.%20Sent%20from%20portfolio" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-        <a class="anchor-info" href="https://www.linkedin.com/in/matiasfare/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a class="anchor-info" href="mailto:matiasfare@gmail.com" target="_blank"><i class="fa-regular fa-envelope" ></i></a>
+        <a class="anchor-info"
+            href="https://wa.me/5491159389175?text=Hello%20I%27m%20interested%20in%20contacting%20you.%20Sent%20from%20portfolio"
+            target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a class="anchor-info" href="https://www.linkedin.com/in/matiasfare/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
+        <a class="anchor-info" href="mailto:matiasfare@gmail.com" target="_blank"><i
+                class="fa-regular fa-envelope"></i></a>
     </footer>
 
 
-
+    <script src=script.js></script>
 </body>
 
 </html>
