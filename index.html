@@ -27,6 +27,7 @@
         <nav class="head-menu">
             <a class="anchor-head" href="#about">About me</a>
             <a class="anchor-head" href="#skill-section">Skills</a>
+            <a class="anchor-head" href="#projects">Projects</a>
             <a class="anchor-head" href="contact.html">Contact</a>
         </nav>
     </header>
@@ -51,10 +52,44 @@
         </div>
 
         <div class="postick">
-            <p>"I'm passionate about the IT sector and I am currently pursuing a Bachelor's degree in Information
-                Technology to improve
-                and offer my best. I'm a full-stack/software developer with great creativity and imagination, looking to
-                expand my horizons."</p>
+            <div class="about-content">
+                <div class="about-intro">
+                    <p>"I'm passionate about the IT sector and I am currently pursuing a Bachelor's degree in
+                        Information
+                        Technology to continuously improve and offer my best work."</p>
+                </div>
+
+                <div class="about-details">
+                    <div class="about-section">
+                        <h4>👨‍💻 Professional Focus</h4>
+                        <p>Full-stack/software developer with expertise in modern web technologies, database design, and
+                            system architecture. I specialize in creating robust, scalable applications with clean,
+                            maintainable code.</p>
+                    </div>
+
+                    <div class="about-section">
+                        <h4>🎓 Education & Growth</h4>
+                        <p>Currently pursuing Bachelor's degree in Information Technology, constantly learning new
+                            technologies and best practices. I believe in continuous improvement and staying updated
+                            with industry trends.</p>
+                    </div>
+
+                    <div class="about-section">
+                        <h4>🚀 What Drives Me</h4>
+                        <p>I'm driven by the challenge of solving complex problems through code. Whether it's building
+                            authentication systems, real-time applications, or e-commerce platforms, I approach each
+                            project with creativity and technical precision.</p>
+                    </div>
+
+                    <div class="about-section">
+                        <h4>🎯 Career Goals</h4>
+                        <p>Looking to expand my horizons in software development, contribute to meaningful projects, and
+                            collaborate with talented teams. Specialized focus on backend development, cybersecurity,
+                            system architecture, and
+                            emerging technologies in secure application development.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </section>
@@ -76,6 +111,128 @@
             <span class="icon-git"><img src="./Img/git-icons8.png" alt="Git icono de Icons8"></span>
             <span class="icon-cybersec"><img src="./Img/cyber-security-icons8.png" alt="icono de icons8"></span>
             <span class="icon-data"><img src="./Img/data-analyst-icons8.png" alt="icono de icons8"></span>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="projects-section" id="projects">
+        <div class="projects-header">
+            <h2 class="projects-title">Featured Projects</h2>
+            <p class="projects-subtitle">Here are some of my most relevant development projects</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Proyecto 1: MorganFreeLog -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>MorganFreeLog</h3>
+                    <div class="project-links">
+                        <a href="https://github.com/MatiasAFare/MorganFreeLog" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <p>Complete management system with authentication, role-based permissions, automatic logging, and
+                        e-commerce functionality. Includes user administration, shopping cart, and comprehensive audit
+                        system.</p>
+                </div>
+                <div class="project-technologies">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Express</span>
+                    <span class="tech-tag">Sequelize</span>
+                    <span class="tech-tag">SQLite</span>
+                    <span class="tech-tag">JWT</span>
+                    <span class="tech-tag">EJS</span>
+                </div>
+                <div class="project-features">
+                    <ul>
+                        <li>🔐 Role-based authentication system</li>
+                        <li>📊 Automatic request logging with Morgan</li>
+                        <li>🛒 Shopping cart with purchase system</li>
+                        <li>👥 Complete user & permission management</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Proyecto 2: MorganFreeChat -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>MorganFreeChat <span class="dev-badge">🚧 In Development</span></h3>
+                    <div class="project-links">
+                        <a href="https://github.com/MatiasAFare/MorganFreeChat" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <p>Real-time chat application built with Node.js using native TCP sockets. Features nickname
+                        management, user commands, and persistent chat logging system.</p>
+                </div>
+                <div class="project-technologies">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Net Module</span>
+                    <span class="tech-tag">TCP Sockets</span>
+                    <span class="tech-tag">File System</span>
+                    <span class="tech-tag">Readline</span>
+                </div>
+                <div class="project-features">
+                    <ul>
+                        <li>💬 Real-time messaging with TCP sockets</li>
+                        <li>👤 Dynamic nickname system</li>
+                        <li>📝 Command system (/nick, /lista, /salir)</li>
+                        <li>📋 Persistent chat logging</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Proyecto 3: PawMe -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>PawMe</h3>
+                    <div class="project-links">
+                        <a href="https://github.com/MatiasAFare/pawme" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <i class="fa-solid fa-paw"></i>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <p>Pet care and management application designed to help pet owners track their furry friends'
+                        health, activities, and important information in one centralized platform.</p>
+                </div>
+                <div class="project-technologies">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">LocalStorage</span>
+                </div>
+                <div class="project-features">
+                    <ul>
+                        <li>🐕 Pet profile management</li>
+                        <li>📅 Health and activity tracking</li>
+                        <li>📱 Responsive design</li>
+                        <li>💾 Local data persistence</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
     <hr id="hr_two">
