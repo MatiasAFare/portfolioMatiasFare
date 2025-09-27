@@ -466,16 +466,17 @@ hr {
 }
 
 .skill-icon img {
-	width: 50px;
-	height: 50px;
+	width: 50px !important;
+	height: 50px !important;
+	object-fit: contain;
 	transition: all 0.3s ease;
 }
 
 
 .skill-card[data-skill="aws"] .skill-icon img,
 .skill-card[data-skill="gcp"] .skill-icon img {
-	width: 65px !important;
-	height: 65px !important;
+	width: 50px;
+	height: 50px;
 	object-fit: contain;
 	filter: brightness(1.2) contrast(1.2) saturate(1.1);
 	padding: 2px;
@@ -1663,6 +1664,36 @@ html {
 		top: -80px;
 		height: 80px;
 	}
+
+	.skills-container {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+	}
+
+	.skill-card {
+		padding: 0.8rem;
+	}
+
+	.skill-icon img {
+		width: 30px !important;
+		height: 30px !important;
+		object-fit: contain;
+	}
+
+	.skill-info h3 {
+		font-size: 0.85rem;
+		margin-bottom: 0.3rem;
+	}
+
+	.skill-info p {
+		font-size: 0.6rem;
+		line-height: 1.2;
+		margin-bottom: 0.3rem;
+	}
+
+	.level-text {
+		font-size: 0.55rem;
+	}
 }
 
 
@@ -1837,6 +1868,36 @@ html {
 		top: -60px;
 		height: 60px;
 	}
+
+	.skills-container {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0.8rem;
+	}
+
+	.skill-card {
+		padding: 0.6rem;
+	}
+
+	.skill-icon img {
+		width: 25px !important;
+		height: 25px !important;
+		object-fit: contain;
+	}
+
+	.skill-info h3 {
+		font-size: 0.75rem;
+		margin-bottom: 0.2rem;
+	}
+
+	.skill-info p {
+		font-size: 0.55rem;
+		line-height: 1.1;
+		margin-bottom: 0.2rem;
+	}
+
+	.level-text {
+		font-size: 0.5rem;
+	}
 }
 
 
@@ -1910,6 +1971,36 @@ html {
 	.fa-linkedin,
 	.fa-envelope {
 		font-size: 35px;
+	}
+
+	.skills-container {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0.5rem;
+	}
+
+	.skill-card {
+		padding: 0.5rem;
+	}
+
+	.skill-icon img {
+		width: 20px !important;
+		height: 20px !important;
+		object-fit: contain;
+	}
+
+	.skill-info h3 {
+		font-size: 0.65rem;
+		margin-bottom: 0.1rem;
+	}
+
+	.skill-info p {
+		font-size: 0.45rem;
+		line-height: 1.0;
+		margin-bottom: 0.1rem;
+	}
+
+	.level-text {
+		font-size: 0.4rem;
 	}
 }
 
