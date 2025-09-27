@@ -23,7 +23,7 @@ body {
     background: transparent;
 }
 
-/* Ensure no default backgrounds */
+
 body,
 html,
 section,
@@ -32,14 +32,14 @@ form {
     background-color: transparent !important;
 }
 
-/* Override any potential default styles */
+
 .contact-form-section,
 .contact-socials,
 .contact-item {
     background-color: transparent !important;
 }
 
-/* Make sure the form section is the only one with background */
+
 .contact-form-section {
     background-color: rgba(255, 255, 255, 0.1) !important;
 }
@@ -295,7 +295,7 @@ form {
     }
 }
 
-/* Loading Animation */
+
 .loading-overlay {
     position: fixed;
     top: 0;
@@ -336,7 +336,7 @@ form {
     }
 }
 
-/* Smooth transitions */
+
 * {
     box-sizing: border-box;
 }
@@ -345,7 +345,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Performance optimizations */
+
 .floating-shape,
 .contact-socials a,
 .back-button {

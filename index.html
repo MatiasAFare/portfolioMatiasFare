@@ -26,8 +26,8 @@
     <header class="head-main">
         <nav class="head-menu">
             <a class="anchor-head" href="#about">About me</a>
-            <a class="anchor-head" href="#skill-section">Skills</a>
             <a class="anchor-head" href="#projects">Projects</a>
+            <a class="anchor-head" href="#skill-section">Skills</a>
             <a class="anchor-head" href="contact.html">Contact</a>
         </nav>
     </header>
@@ -61,28 +61,28 @@
 
                 <div class="about-details">
                     <div class="about-section">
-                        <h4>👨‍💻 Professional Focus</h4>
+                        <h4> Professional Focus</h4>
                         <p>Full-stack/software developer with expertise in modern web technologies, database design, and
                             system architecture. I specialize in creating robust, scalable applications with clean,
                             maintainable code.</p>
                     </div>
 
                     <div class="about-section">
-                        <h4>🎓 Education & Growth</h4>
+                        <h4> Education & Growth</h4>
                         <p>Currently pursuing Bachelor's degree in Information Technology, constantly learning new
                             technologies and best practices. I believe in continuous improvement and staying updated
                             with industry trends.</p>
                     </div>
 
                     <div class="about-section">
-                        <h4>🚀 What Drives Me</h4>
+                        <h4>What Drives Me</h4>
                         <p>I'm driven by the challenge of solving complex problems through code. Whether it's building
                             authentication systems, real-time applications, or e-commerce platforms, I approach each
                             project with creativity and technical precision.</p>
                     </div>
 
                     <div class="about-section">
-                        <h4>🎯 Career Goals</h4>
+                        <h4> Career Goals</h4>
                         <p>Looking to expand my horizons in software development, contribute to meaningful projects, and
                             collaborate with talented teams. Specialized focus on backend development, cybersecurity,
                             system architecture, and
@@ -97,20 +97,234 @@
     <hr>
 
     <section class="skill-section" id="skill-section">
-        <p class="typer">These are my Skills</p>
-        <div class="skill-icons">
-            <span class="icon-html"><img src="./Img/Html-icons8.png" alt="HTML icono de Icons8"></span>
-            <span class="icon-css"><img src="./Img/CSS-icons8.png" alt="CSS icono de Icons8"></span>
-            <span class="icon-java"><img src="./Img/JAVA-icons8.png" alt="Java icono de Icons8"></span>
-            <span class="icon-js"><img src="./Img/JS-icons8.png" alt="Js icono de Icons8"></span>
-            <span class="icon-python"><img src="./Img/Python-icons8.png" alt="Python icono de Icons8"></span>
-            <span class="icon-github"><img src="./Img/github-icons8.png" alt="Github icono de Icons8"></span>
-            <span class="icon-mysql"><img src="./Img/mysql-icons8.png" alt="Mysql icono de icons8"></span>
-            <span class="icon-sql"><img src="./Img/sql-icons8.png" alt="sql icono de icons8"></span>
-            <span class="icon-boots"><img src="./Img/bootstrap-icons8.png" alt="Bootstrap icono de icons8"></span>
-            <span class="icon-git"><img src="./Img/git-icons8.png" alt="Git icono de Icons8"></span>
-            <span class="icon-cybersec"><img src="./Img/cyber-security-icons8.png" alt="icono de icons8"></span>
-            <span class="icon-data"><img src="./Img/data-analyst-icons8.png" alt="icono de icons8"></span>
+        <div class="skills-header">
+            <h2 class="skills-title">Technical Expertise</h2>
+            <p class="skills-subtitle">Technologies and tools I work with</p>
+        </div>
+
+        <div class="skills-filters">
+            <button class="filter-btn active" data-filter="all">All Skills</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="backend">Backend</button>
+            <button class="filter-btn" data-filter="tools">Tools</button>
+        </div>
+
+        <div class="skills-container">
+            <!-- 1. Python (Primera) -->
+            <div class="skill-card" data-category="backend" data-skill="python">
+                <div class="skill-icon">
+                    <img src="./Img/Python-icons8.png" alt="Python">
+                </div>
+                <div class="skill-info">
+                    <h3>Python</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" data-level="80"></div>
+                        <span class="level-text">Advanced</span>
+                    </div>
+                </div>
+                <div class="skill-tooltip">
+                    <h4>Python</h4>
+                    <p>Scripting, automation, data analysis, web development. Versatile language for multiple purposes.
+                    </p>
+                    <span class="experience">2+ years experience</span>
+                </div>
+            </div>
+
+            <!-- 2. JavaScript (Segunda) -->
+            <div class="skill-card" data-category="backend" data-skill="javascript">
+                <div class="skill-icon">
+                    <img src="./Img/JS-icons8.png" alt="JavaScript">
+                </div>
+                <div class="skill-info">
+                    <h3>JavaScript</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" data-level="50"></div>
+                        <span class="level-text">Intermediate</span>
+                    </div>
+                </div>
+                <div class="skill-tooltip">
+                    <h4>JavaScript ES6+</h4>
+                    <p>Modern JavaScript, DOM manipulation, async/await, modules. Growing proficiency in interactive
+                        applications.</p>
+                    <span class="experience">1+ year experience</span>
+                </div>
+            </div>
+
+            <!-- 3. Java (Tercera) -->
+            <div class="skill-card" data-category="backend" data-skill="java">
+                <div class="skill-icon">
+                    <img src="./Img/JAVA-icons8.png" alt="Java">
+                </div>
+                <div class="skill-info">
+                    <h3>Java</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" data-level="35"></div>
+                        <span class="level-text">Beginner+</span>
+                    </div>
+                </div>
+                <div class="skill-tooltip">
+                    <h4>Java</h4>
+                    <p>Object-oriented programming fundamentals, basic syntax, learning enterprise patterns. Academic
+                        and personal projects.</p>
+                    <span class="experience">Learning & Practicing</span>
+                </div>
+            </div>
+
+            <!-- 4. SQL (Cuarta) -->
+            <div class="skill-card" data-category="backend" data-skill="sql">
+                <div class="skill-icon">
+                    <img src="./Img/sql-icons8.png" alt="SQL">
+                </div>
+                <div class="skill-info">
+                    <h3>SQL</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" data-level="80"></div>
+                        <span class="level-text">Advanced</span>
+                    </div>
+                </div>
+                <div class="skill-tooltip">
+                    <h4>SQL</h4>
+                    <p>Complex queries, joins, stored procedures. Essential for database development and data analysis.
+                    </p>
+                    <span class="experience">3+ years experience</span>
+                </div>
+            </div>
+
+            <!-- 5. Git (Quinta) -->
+            <div class="skill-card" data-category="tools" data-skill="git">
+                <div class="skill-icon">
+                    <img src="./Img/git-icons8.png" alt="Git">
+                </div>
+                <div class="skill-info">
+                    <h3>Git</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" data-level="85"></div>
+                        <span class="level-text">Advanced</span>
+                    </div>
+                </div>
+                <div class="skill-tooltip">
+                    <h4>Git</h4>
+                    <p>Version control, branching strategies, collaboration. Essential tool for all development
+                        projects.</p>
+                    <span class="experience">3+ years experience</span>
+                </div>
+            </div>
+
+            <!-- 6. GitHub (Sexta) -->
+            <div class="skill-card" data-category="tools" data-skill="github">
+                <div class="skill-icon">
+                    <img src="./Img/github-icons8.png" alt="GitHub">
+                </div>
+                <div class="skill-info">
+                    <h3>GitHub</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" data-level="80"></div>
+                        <span class="level-text">Advanced</span>
+                    </div>
+                </div>
+                <div class="skill-tooltip">
+                    <h4>GitHub</h4>
+                    <p>Repository management, collaboration, CI/CD, project organization. Platform for code sharing.</p>
+                    <span class="experience">2+ years experience</span>
+                </div>
+            </div>
+
+            <!-- Las demás en el mismo orden -->
+            <div class="skill-card" data-category="frontend" data-skill="bootstrap">
+                <div class="skill-icon">
+                    <img src="./Img/bootstrap-icons8.png" alt="Bootstrap">
+                </div>
+                <div class="skill-info">
+                    <h3>Bootstrap</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" data-level="75"></div>
+                        <span class="level-text">Intermediate</span>
+                    </div>
+                </div>
+                <div class="skill-tooltip">
+                    <h4>Bootstrap</h4>
+                    <p>Rapid prototyping, responsive components, utility classes. Used for quick UI development.</p>
+                    <span class="experience">2+ years experience</span>
+                </div>
+            </div>
+
+            <!-- Cloud Skills -->
+            <div class="skill-card" data-category="tools" data-skill="aws">
+                <div class="skill-icon">
+                    <img src="./Img/AWS.png" alt="AWS">
+                </div>
+                <div class="skill-info">
+                    <h3>AWS</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" data-level="60"></div>
+                        <span class="level-text">Intermediate</span>
+                    </div>
+                </div>
+                <div class="skill-tooltip">
+                    <h4>Amazon Web Services</h4>
+                    <p>EC2, S3, Lambda, RDS, CloudFormation. Deploying and managing cloud infrastructure and services.
+                    </p>
+                    <span class="experience">1+ years experience</span>
+                </div>
+            </div>
+
+            <div class="skill-card" data-category="tools" data-skill="gcp">
+                <div class="skill-icon">
+                    <img src="./Img/GCP.png" alt="GCP">
+                </div>
+                <div class="skill-info">
+                    <h3>Google Cloud</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" data-level="55"></div>
+                        <span class="level-text">Intermediate</span>
+                    </div>
+                </div>
+                <div class="skill-tooltip">
+                    <h4>Google Cloud Platform</h4>
+                    <p>Compute Engine, Cloud Storage, App Engine, BigQuery. Building and deploying cloud applications.
+                    </p>
+                    <span class="experience">1+ years experience</span>
+                </div>
+            </div>
+
+            <!-- Other Skills -->
+            <div class="skill-card" data-category="other" data-skill="cybersecurity">
+                <div class="skill-icon">
+                    <img src="./Img/cyber-security-icons8.png" alt="Cybersecurity">
+                </div>
+                <div class="skill-info">
+                    <h3>Cybersecurity</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" data-level="70"></div>
+                        <span class="level-text">Intermediate</span>
+                    </div>
+                </div>
+                <div class="skill-tooltip">
+                    <h4>Cybersecurity</h4>
+                    <p>Security practices, authentication, authorization, secure coding principles. Focus area for
+                        career growth.</p>
+                    <span class="experience">Learning & Practicing</span>
+                </div>
+            </div>
+
+            <div class="skill-card" data-category="other" data-skill="data-analysis">
+                <div class="skill-icon">
+                    <img src="./Img/data-analyst-icons8.png" alt="Data Analysis">
+                </div>
+                <div class="skill-info">
+                    <h3>Data Analysis</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" data-level="65"></div>
+                        <span class="level-text">Intermediate</span>
+                    </div>
+                </div>
+                <div class="skill-tooltip">
+                    <h4>Data Analysis</h4>
+                    <p>Data processing, pattern recognition, insights extraction. Complementary skill for backend
+                        development.</p>
+                    <span class="experience">1+ year experience</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -154,10 +368,10 @@
                 </div>
                 <div class="project-features">
                     <ul>
-                        <li>🔐 Role-based authentication system</li>
-                        <li>📊 Automatic request logging with Morgan</li>
-                        <li>🛒 Shopping cart with purchase system</li>
-                        <li>👥 Complete user & permission management</li>
+                        <li> Role-based authentication system</li>
+                        <li> Automatic request logging with Morgan</li>
+                        <li> Shopping cart with purchase system</li>
+                        <li> Complete user & permission management</li>
                     </ul>
                 </div>
             </div>
@@ -238,16 +452,55 @@
     <hr id="hr_two">
 
     <footer id="footer-style">
-        <a class="anchor-info"
-            href="https://wa.me/5491159389175?text=Hello%20I%27m%20interested%20in%20contacting%20you.%20Sent%20from%20portfolio"
-            target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-        <a class="anchor-info" href="https://www.linkedin.com/in/matiasfare/" target="_blank"><i
-                class="fa-brands fa-linkedin"></i></a>
-        <a class="anchor-info" href="mailto:matiasfare@gmail.com" target="_blank"><i
-                class="fa-regular fa-envelope"></i></a>
+        <div class="footer-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+                <div class="shape shape-6"></div>
+            </div>
+            <div class="particles">
+                <div class="particle particle-1"></div>
+                <div class="particle particle-2"></div>
+                <div class="particle particle-3"></div>
+                <div class="particle particle-4"></div>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="social-links">
+                    <a class="anchor-info"
+                        href="https://wa.me/5491159389175?text=Hello%20I%27m%20interested%20in%20contacting%20you.%20Sent%20from%20portfolio"
+                        target="_blank" title="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span class="social-glow"></span>
+                    </a>
+                    <a class="anchor-info" href="https://www.linkedin.com/in/matiasfare/" target="_blank"
+                        title="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span class="social-glow"></span>
+                    </a>
+                    <a class="anchor-info" href="mailto:matiasfare@gmail.com" target="_blank" title="Email">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span class="social-glow"></span>
+                    </a>
+                    <a class="anchor-info" href="https://github.com/MatiasAFare" target="_blank" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                        <span class="social-glow"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-wave"></div>
+            <p>&copy; 2025 Matias Agustin Faré Luis. All rights reserved.</p>
+            <p>Built with passion using HTML, CSS, JavaScript </p>
+        </div>
     </footer>
-
-
     <script src=script.js></script>
 </body>
 
