@@ -7,10 +7,31 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(() => loading.remove(), 500);
     }
 
-
+    // Asegurar visibilidad de secciones críticas
+    ensureSectionVisibility();
+    
     initSkillsSection();
     initScrollAnimations();
 });
+
+// Asegurar que las secciones sean siempre visibles
+function ensureSectionVisibility() {
+    const criticalSections = [
+        'skill-section',
+        'projects',
+        'about-section',
+        'footer'
+    ];
+    
+    criticalSections.forEach(sectionId => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.style.display = 'block';
+            section.style.visibility = 'visible';
+            section.style.opacity = '1';
+        }
+    });
+}
 
 // Skills Section
 function initSkillsSection() {
