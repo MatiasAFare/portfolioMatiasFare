@@ -7,14 +7,14 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(() => loading.remove(), 500);
     }
 
-    // Asegurar visibilidad de secciones críticas
+    // Section Visibility
     ensureSectionVisibility();
-    
+
     initSkillsSection();
     initScrollAnimations();
 });
 
-// Asegurar que las secciones sean siempre visibles
+// Section Visibility
 function ensureSectionVisibility() {
     const criticalSections = [
         'skill-section',
@@ -22,7 +22,7 @@ function ensureSectionVisibility() {
         'about-section',
         'footer'
     ];
-    
+
     criticalSections.forEach(sectionId => {
         const section = document.getElementById(sectionId);
         if (section) {
